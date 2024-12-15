@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", serif;
+}
+
+.playwrite-mod {
+  font-family: "Playwrite US Modern", serif;
+}
+
+.minus-z {
+  z-index: -1;
+}
+
+.library-bg {
+  background-image: url('/library-bg.png');
+}
+
+.bg-cream {
+  background-color: #fce6ca;
+}
+
+.search-icon {
+  top: 50%;
+  right: 1.25rem;
+  transform: translateY(-50%);
+  scale: 120%;
+  color: rgb(46, 29, 9);
+  cursor: pointer;
+  height: 1.5rem;
+}
+
+.active {
+  text-decoration: underline;
+  transform: translateY(-20%);
+}
+
+.bookcard {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 1rem;
+  background-color: white;
+
+  div {
+    max-width: 100%;
+    
+    p {
+      white-space: nowrap;
+      overflow-x: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
+.bookcard:hover {
+  scale: 1.03;
+  transition: ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 10px; 
+  height: 3px;/* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ccc; /* Set the color of the thumb */
+  border-radius: 5px; /* Round the corners of the thumb */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f0f0f0; /* Set the color of the track */
+}
+
+.pagination-btn {
+  @apply bg-stone-700 text-white font-extrabold rounded-full w-10 h-10 text-xl
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: 'none'; /* IE and Edge */
+  scrollbar-width: 'none';  /* Firefox */
+  -webkit-scrollbar: 'none';
+}
