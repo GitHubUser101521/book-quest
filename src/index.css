@@ -61,7 +61,7 @@
 }
 
 .bookcard:hover {
-  scale: 1.03;
+  scale: 0.95;
   transition: ease-in-out 0.3s;
   cursor: pointer;
 }

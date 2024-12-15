@@ -45,7 +45,7 @@ function CategorySection({ title, category, query }: CategorySectionProps) {
         {loading ? 
           <p>Loading...</p> 
           :
-          <div className="overflow-auto scrollbar-hide">
+          <div className="overflow-auto scrollbar-hide p-2">
             <div className="flex gap-8">
               {data.docs.slice(0, 20).map((doc: DocType) => (
                 <BookCard book={doc}/>
